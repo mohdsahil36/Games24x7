@@ -24,15 +24,15 @@
 }
 
 @media (min-width: 576px) {
-  .headlineAndCancel {
-    background-color: rgba(142, 142, 142, 1);
-    color: white;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-  }
-
   .data-modal {
     width: 100%;
+    
+    .headlineAndCancel {
+      background-color: rgba(142, 142, 142, 1);
+      color: white;
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
   }
 }

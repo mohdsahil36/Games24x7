@@ -1,35 +1,39 @@
-.open-modal-btn {
-  padding: 1rem 1.75rem;
-  border-radius: 2rem;
-  background-color: rgb(83, 176, 212);
-  border: none;
-  color: white;
-  text-transform: capitalize;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
+.btn-div{
+  text-align: center;
+  padding-top: 2rem;
 
-.open-modal-btn:disabled {
-  background-color: rgba(83, 176, 212, 0.5);
-  cursor: not-allowed;
-  transform: scale(0.98);
+  .open-modal-btn {
+    padding: 1rem 1.75rem;
+    border-radius: 2rem;
+    background-color: rgb(83, 176, 212);
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .open-modal-btn:disabled {
+    background-color: rgba(83, 176, 212, 0.5);
+    cursor: not-allowed;
+    transform: scale(0.98);
+  }
+  
+  .open-modal-btn:hover:enabled {
+    background-color: rgb(60, 150, 180);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .open-modal-btn:active:enabled {
+    transform: scale(0.95);
+  }
+  
+  .open-modal-btn:focus:enabled {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(83, 176, 212, 0.5);
+  }
 }
-
-.open-modal-btn:hover:enabled {
-  background-color: rgb(60, 150, 180);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.open-modal-btn:active:enabled {
-  transform: scale(0.95);
-}
-
-.open-modal-btn:focus:enabled {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(83, 176, 212, 0.5);
-}
-
 
 .modal-container {
   position: fixed;

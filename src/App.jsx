@@ -18,9 +18,11 @@ function App() {
 
   return (
     <>
-      <button className="open-modal-btn" onClick={openModal} disabled={isModalOpen}>
-        Open Modal
-      </button>
+      <div className='btn-div'>
+        <button className="open-modal-btn" onClick={openModal} disabled={isModalOpen}>
+          Open Modal
+        </button>
+      </div>
       {isModalOpen && (
         <div
           className={`modal-container ${isExiting ? 'fade-out' : ''}`}
