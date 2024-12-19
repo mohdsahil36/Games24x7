@@ -1,0 +1,31 @@
+.healine {
+    text-align: center;
+    font-weight: 500;
+  }
+  .data-modal {
+    width: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headlineAndCancel{
+    display: flex;
+    align-items: center;
+  }
+  .close-modal{
+    color: rgba(196, 196, 196, 1);
+  }
+
+  @media (min-width: 576px) {
+    .headlineAndCancel{
+        background-color: rgba(142, 142, 142, 1);
+        color: white;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+      }
+      .data-modal{
+        width: 100%;
+      }
+  }
