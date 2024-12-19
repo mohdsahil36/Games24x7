@@ -4,23 +4,34 @@ import Modal from './components/GST-modal/Modal';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+
+  const closeModal = () => {
+    setIsExiting(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setIsExiting(false);
+    }, 300);
+  };
 
   return (
     <>
-      <button
-        className="open-modal-btn"
-        onClick={openModal}
-        disabled={isModalOpen} // Disable the button when the modal is open
-      >
+      <button className="open-modal-btn" onClick={openModal} disabled={isModalOpen}>
         Open Modal
       </button>
       {isModalOpen && (
-        <div className="modal-container">
-          <div className="modal-overlay" onClick={closeModal}></div>
-          <div className="modal-content">
+        <div
+          className={`modal-container ${isExiting ? 'fade-out' : ''}`}
+          onClick={(e) => {
+            if (e.target.classList.contains('modal-overlay')) {
+              closeModal();
+            }
+          }}
+        >
+          <div className={`modal-overlay ${isExiting ? 'fade-out' : ''}`}></div>
+          <div className={`modal-content ${isExiting ? 'fade-out' : ''}`}>
             <Modal closeModal={closeModal} />
           </div>
         </div>

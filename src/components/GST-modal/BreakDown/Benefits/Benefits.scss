@@ -9,10 +9,22 @@
       margin-bottom: 0;
     }
     .benefits-amt{
-        margin-top: 0.25rem;
+        margin: 0.25rem 0;
         color: #77AA00;
         font-size: 0.875rem;
         text-align: center;
         font-weight: 700;
+    }
+}
+
+@media (min-width: 576px) {
+  .benefits-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+    }
+    .benefits-headline{
+      margin: 0;
     }
 }
