@@ -1,36 +1,38 @@
-.benefits-header{
-    background-image: linear-gradient(#D8EAFF,#E9F4FF);
-    padding: 0.125rem;
-    border-radius: 8px 8px 0 0;
-    .benefits-headline{
-      text-align: center;
-      font-weight: 400;  
-      font-size: 0.688rem;
-      margin-bottom: 0;
-    }
-    .benefits-amt{
-        margin: 0.25rem 0;
-        color: #77AA00;
-        font-size: 0.875rem;
-        text-align: center;
-        font-weight: 700;
-    }
+@import '../../../../mixins';
+
+.benefits-header {
+  background-image: linear-gradient(#D8EAFF, #E9F4FF);
+  padding: 0.125rem;
+  @include border-radius-bg(8px, #FFFFFF);
+
+  .benefits-headline {
+    @include text-align(center);
+    font-weight: 400;
+    font-size: 0.688rem;
+    margin-bottom: 0;
+  }
+
+  .benefits-amt {
+    margin: 0.25rem 0;
+    color: #77AA00;
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 576px) {
-  .benefits-header{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem;
+  .benefits-header {
+    @include flex-align(row, space-between, center);
+    padding: 0.5rem;
 
-      .benefits-headline{
-        margin: 0;
-        font-size: 0.75rem;
-      }
-
-      .benefits-amt{
-        font-size: 1rem;
-      }
+    .benefits-headline {
+      margin: 0;
+      font-size: 0.75rem;
     }
+
+    .benefits-amt {
+      font-size: 1rem;
+    }
+  }
 }

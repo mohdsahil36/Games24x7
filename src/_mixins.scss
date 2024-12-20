@@ -1,0 +1,26 @@
+// _mixins.scss
+
+@mixin flex-align($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin text-align($alignment: center) {
+    text-align: $alignment;
+  }
+  
+  @mixin border-radius-bg($radius: 8px, $bg-color: #fff) {
+    border-radius: $radius;
+    background-color: $bg-color;
+  }
+  
+  @mixin responsive-font($font-size-small, $font-size-large) {
+    font-size: $font-size-small;
+  
+    @media (min-width: 576px) {
+      font-size: $font-size-large;
+    }
+  }
+  
