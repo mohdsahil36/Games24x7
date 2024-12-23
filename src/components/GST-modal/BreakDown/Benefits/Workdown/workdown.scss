@@ -1,11 +1,11 @@
-@import '../../../../../mixins';
+@use '../../../../../mixins';
 
 .gst-deposits {
     background-color: rgba(250, 250, 250, 1);
     border: 1px solid rgba(250, 250, 250, 1);
   
     .workdown-headline {
-      @include text-align(center);
+      @include mixins.text-align(center);
       color: black;
       font-size: 0.875rem;
       font-weight: 700;
@@ -17,14 +17,14 @@
       .payout-headline {
         font-size: 0.75rem;
         font-weight: 500;
-        @include text-align(center);
+        @include mixins.text-align(center);
         margin-bottom: 4px;
       }
   
       .payout-amt {
         font-size: 1.5rem;
         font-weight: 700;
-        @include text-align(center);
+        @include mixins.text-align(center);
         margin: 0 0 4px 0;
       }
   
@@ -33,19 +33,19 @@
         font-weight: 500;
         color: rgba(116, 116, 116, 1);
         margin: 0;
-        @include text-align(center);
+        @include mixins.text-align(center);
       }
     }
   
     .navigation {
-      @include flex-align(row, space-between, center);
+      @include mixins.flex-align(row, space-between, center);
       margin-top: 2rem;
       padding: 0 1rem;
   
       .distribution-boxes {
         border: 1px solid rgba(205, 205, 205, 1);
         padding: 0.5rem 0.75rem;
-        @include border-radius-bg(8px, #FFFFFF);
+        @include mixins.border-radius-bg(8px, #FFFFFF);
         width: 6rem;
         height: 3rem;
   
@@ -54,7 +54,7 @@
           font-weight: 700;
           font-size: 0.875rem;
           margin: 0;
-          @include text-align(center);
+          @include mixins.text-align(center);
         }
   
         .deposit-input {
@@ -62,7 +62,7 @@
           font-weight: 700;
           font-size: 0.875rem;
           margin: 0;
-          @include text-align(center);
+          @include mixins.text-align(center);
         }
   
         .input-desc,
@@ -70,7 +70,7 @@
           font-size: 0.625rem;
           font-weight: 400;
           margin: 0.35rem 0 0 0;
-          @include text-align(center);
+          @include mixins.text-align(center);
         }
       }
     }
@@ -83,7 +83,7 @@
         padding: 1rem 0.75rem 1rem 0.75rem;
         border: 2px solid rgba(0, 191, 54, 1);
         background-color: rgb(231, 255, 241);
-        @include border-radius-bg(8px, #FFFFFF);
+        @include mixins.border-radius-bg(8px, #FFFFFF);
         margin-top: 1rem;
   
         .rummyCircle-contribution {
@@ -91,7 +91,7 @@
           font-size: 1rem;
           font-weight: 700;
           margin: 0;
-          @include text-align(center);
+          @include mixins.text-align(center);
         }
   
         .benefit {
@@ -99,7 +99,7 @@
   
           .gst {
             margin-top: 0.5rem;
-            @include text-align(center);
+            @include mixins.text-align(center);
             font-size: 0.625rem;
             font-weight: 400;
             margin: 0;
@@ -113,7 +113,7 @@
   
       .return {
         margin-top: 1rem;
-        @include text-align(center);
+        @include mixins.text-align(center);
         padding: 0 1rem 1rem 1rem;
   
         .you-get {

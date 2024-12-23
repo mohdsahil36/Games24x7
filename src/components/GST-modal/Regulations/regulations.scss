@@ -1,10 +1,10 @@
-@import '../../../mixins';
+@use '../../../mixins';
 
 .govt-regulations {
     max-width: 20rem;
     min-height: 6rem;
     border: 1px solid #EEEEEE;
-    @include border-radius-bg(8px, #FFFFFF);
+    @include mixins.border-radius-bg(8px, #FFFFFF);
     margin: auto;
   
     .info {

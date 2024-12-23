@@ -1,14 +1,14 @@
-@import '../../mixins';
+@use '../../mixins';
 
 .data-modal {
   width: 22.5rem;
-  @include flex-align(column, center, center);
+  @include mixins.flex-align(column, center, center);
 
   .headlineAndCancel {
-    @include flex-align(row, space-between, center);
+    @include mixins.flex-align(row, space-between, center);
 
     .healine {
-      @include text-align(center);
+      @include mixins.text-align(center);
       font-weight: 500;
     }
 

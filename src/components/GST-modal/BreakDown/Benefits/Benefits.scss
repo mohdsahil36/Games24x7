@@ -1,12 +1,12 @@
-@import '../../../../mixins';
+@use '../../../../mixins';
 
 .benefits-header {
   background-image: linear-gradient(#D8EAFF, #E9F4FF);
   padding: 0.125rem;
-  @include border-radius-bg(8px, #FFFFFF);
+  @include mixins.border-radius-bg(8px, #FFFFFF);
 
   .benefits-headline {
-    @include text-align(center);
+    @include mixins.text-align(center);
     font-weight: 400;
     font-size: 0.688rem;
     margin-bottom: 0;
@@ -23,7 +23,7 @@
 
 @media (min-width: 576px) {
   .benefits-header {
-    @include flex-align(row, space-between, center);
+    @include mixins.flex-align(row, space-between, center);
     padding: 0.5rem;
 
     .benefits-headline {
