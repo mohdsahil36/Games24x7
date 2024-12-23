@@ -1,5 +1,5 @@
 import React from 'react';
-import './Workdown.scss';
+import './workdown.scss';
 
 export default function Workdown() {
     return (
